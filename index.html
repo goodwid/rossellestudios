@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"></meta>
-        <title>Rosselle Studios</title>
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Rosselle Studios</h1>
-            <nav>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <bollocks>Testing</bollocks>
-            </section>
-        </main>
-        <aside>
-        </aside>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>Rosselle Studios</title>
+    <link rel="stylesheet" type="text/css" href="css/rosselle.css">
+
+    <script id="artwork-template" type="text/x-handlebar-template">
+      <figure class="artwork-item" data-show="{{show}}">
+        <img src="images/{{filename}}" alt="{{title}}, {{year}}, {{media}}, {{show}}">
         <footer>
-            All images &copy; 1999-2016 Andrea Rosselle.
+          <h3>{{title}}</h3>
         </footer>
+      </figure>
+    </script>
+    <script id="selector-template" type="text/x-handlerbars-template">
+      <option value="{{data}}">{{data}}</option>
+    </script>
+  </head>
 
 
-		<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
-        <script src="js/app.js"></script>
-    </body>
+  <body>
+    <header class="content-width shadow">
+        <h1 class="center-content">Rosselle Studios</h1>
+        <nav class="main-nav center-content">
+          <ul>
+            <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+        </nav>
+    </header>
+    <main>
+      <section id="bio">
+        Andrea is an artist.
+      </section>
+      <section id="current-work">Current work.</section>
+      <section id="past-work">Past work.</section>
+
+
+    </main>
+    <aside>
+      <h3>Pinterest will go here.</h3>
+    </aside>
+    <footer class="center-content content-width shadow">
+      All images &copy; 1999-2016 Andrea Rosselle.
+      <select id="show-filter">
+        <option value="">-- Filter --</option>
+      </select>
+    </footer>
+
+
+    <script src="lib/jquery-2.2.3.min.js"></script>
+    <script src="lib/handlebars-latest.js"></script>
+    <script src="js/arworkData.js"></script>
+    <script src="js/artwork.js"></script>
+    <script src="js/veiwArtwork.js"></script>
+  </body>
 </html>

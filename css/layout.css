@@ -1,0 +1,62 @@
+
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+main {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  margin-top: 20px;
+}
+
+
+ul {
+  padding: 0;
+}
+
+#about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+
+#projects {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.project-item {
+  width: 40%;
+  max-width: 250px;
+  margin: 1%;
+  padding: 10px 2.8%;
+  overflow: visible;
+}
+
+.content-width {
+  width: 92%;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.about-content {
+  margin-top: 20px;
+}
+
+.about-content p {
+  padding: 10px 20px;
+}
+
+
+.template, .icon-menu, #show-filter {
+  display: none;
+}

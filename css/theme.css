@@ -1,0 +1,16 @@
+
+select {
+  height: 1.7em;
+}
+
+.shadow {
+  box-shadow:3px 3px 8px black;
+}
+
+.bg-color-white {
+  background-color: white;
+}
+
+.project-title {
+  font-style:italic;
+}

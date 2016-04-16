@@ -1,0 +1,14 @@
+.nav-item {
+  display: inline;
+  background-color: #9ff;
+  padding: 7px 3%;
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  padding-left: 1%;
+}
