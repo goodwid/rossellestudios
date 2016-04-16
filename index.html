@@ -20,26 +20,39 @@
 
 
   <body>
-    <header class="content-width shadow">
+
+
+    <header class="content-width">
         <h1 class="center-content">Rosselle Studios</h1>
         <nav class="main-nav center-content">
           <ul>
-            <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+            <li class="nav-item tab"><a class="nav-link" href="#current-work">current work</a></li>
+            <li class="nav-item tab"><a class="nav-link" href="#past-work">past work</a></li>
+            <li class="nav-item tab"><a class="nav-link" href="#bio">Bio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#bio">blog</a></li>
+
         </nav>
     </header>
+
+
     <main>
-      <section id="bio">
-        Andrea is an artist.
-      </section>
-      <section id="current-work">Current work.</section>
-      <section id="past-work">Past work.</section>
-
-
+      <div id="content">
+        <section id="bio">
+          bio.
+        </section>
+        <section id="current-work">Current work.</section>
+        <section id="past-work">Past work.</section>
+      </div>
+      <aside>
+        <h3>Pinterest will go here.</h3>
+      </aside>
     </main>
-    <aside>
-      <h3>Pinterest will go here.</h3>
-    </aside>
-    <footer class="center-content content-width shadow">
+
+
+
+
+
+    <footer class="center-content content-width">
       All images &copy; 1999-2016 Andrea Rosselle.
       <select id="show-filter">
         <option value="">-- Filter --</option>
@@ -49,7 +62,7 @@
 
     <script src="lib/jquery-2.2.3.min.js"></script>
     <script src="lib/handlebars-latest.js"></script>
-    <script src="js/arworkData.js"></script>
+    <script src="js/artworkdata.js"></script>
     <script src="js/artwork.js"></script>
     <script src="js/veiwArtwork.js"></script>
   </body>

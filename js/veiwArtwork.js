@@ -17,7 +17,7 @@ artworkView.populateFilter = function() {
   });
 };
 
-projectView.handleFilter = function() {
+artworkView.handleFilter = function() {
   var $cf = $('#category-filter');
   var $pwf = $('#past-work figure');
   $cf.on('change', function() {
@@ -36,3 +36,9 @@ projectView.handleFilter = function() {
     }
   });
 };
+
+
+$(document).ready(function () {
+  artwork.populateFilter();
+  artworkView.handleFilter();
+});

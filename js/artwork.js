@@ -1,6 +1,6 @@
 var artwork = [];
 
-function Art = (opts) {
+function Art (opts) {
   var pathPrefix = '';
   this.title = opts.title;
   this.media = opts.media;

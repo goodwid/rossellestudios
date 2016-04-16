@@ -1,10 +1,16 @@
+header, footer   {
+  background: #fdd;
+}
 
+main section {
+  background-color: #ddf;
+}
 select {
   height: 1.7em;
 }
 
-.shadow {
-  box-shadow:3px 3px 8px black;
+aside {
+  background-color: #dfd;h
 }
 
 .bg-color-white {
