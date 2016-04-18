@@ -1,25 +1,37 @@
 /** { border: 1px dashed red;}*/
 
-
-
 body {
   /*display: flex;
   flex-flow: row;
   justify-content: center;*/
+  height: 100%;
 }
 
 main {
-  margin-top: 8px;
+  position: fixed;
+  top: 120px;
+  overflow: scroll;
 }
+
+nav, aside {
+  position: relative;
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  width: 19%;
+}
+
 main div {
   margin-right: .5%;
-  width: 79%;
-  float: left;
-
+  width: 59%;
 }
 
 main div section {
-  margin: 10px 1%;
+  margin: 0 1%;
   height: auto;
   width: 98%;
   display: flex;
@@ -31,7 +43,6 @@ main div section {
 
 aside {
   margin-left: 1%;
-  float: right;
   width: 19%;
   height: 400px;
 }
@@ -39,10 +50,13 @@ aside {
 header {
   margin-top: 0px;
   height: 120px;
+  position: fixed;
+  z-index: 10;
 }
 
 header h1 {
-
+  margin: 0;
+  margin
 }
 
 footer {
@@ -81,6 +95,6 @@ img {
 }
 
 
-#bio, #past-work, .icon-menu, #show-filter {
+#bio, #past-work, .icon-menu, #show-filter, #contact {
   display: none;
 }
