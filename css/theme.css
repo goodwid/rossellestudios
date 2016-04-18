@@ -3,12 +3,13 @@ body {
   font-family: 'Bad Script', cursive;
 }
 
-header, footer   {
+header, footer, nav  {
   background-color: black;
   opacity: 0.8;
   color: white;
 }
 nav {
+
   opacity: 0.8;
 }
 main section {

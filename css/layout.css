@@ -10,19 +10,34 @@ body {
 main {
   position: fixed;
   top: 120px;
+  left: 12%;
   overflow: scroll;
+  width: 69%;
+  bottom: 42px; 
 }
 
 nav, aside {
-  position: relative;
+  position: absolute;
+  top: 120px;
 }
 
 main {
   display: flex;
+  height: 500px;
+
 }
 
 nav {
+  width: 12%;
+  bottom: 42px;
+}
+
+aside {
+  margin-left: 1%;
   width: 19%;
+  /*height: 400px;*/
+  left: 80%;
+  bottom: 40px;
 }
 
 main div {
@@ -41,11 +56,7 @@ main div section {
 
 }
 
-aside {
-  margin-left: 1%;
-  width: 19%;
-  height: 400px;
-}
+
 
 header {
   margin-top: 0px;
@@ -60,7 +71,9 @@ header h1 {
 }
 
 footer {
-  clear: both;
+  position: fixed;
+  bottom: 0px;
+  height: 42px;
 }
 
 ul {
