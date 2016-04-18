@@ -17,11 +17,18 @@ main div {
   float: left;
 
 }
+
 main div section {
-  margin: 1% 8px;
-  height: 100px;
+  margin: 10px 1%;
+  height: auto;
   width: 98%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
 }
+
 aside {
   margin-left: 1%;
   float: right;
@@ -34,12 +41,26 @@ header {
   height: 120px;
 }
 
+header h1 {
+
+}
+
 footer {
   clear: both;
 }
 
 ul {
   padding: 0;
+}
+
+figure {
+  /*width: 320px;
+  height: 350px;*/
+}
+
+img {
+  width: 38%;
+  height: 38%;
 }
 
 

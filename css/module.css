@@ -1,6 +1,6 @@
 .nav-item {
   display: inline;
-  background-color: #9ff;
+  background-color: black;
   padding: 7px 3%;
   border: 1px solid black;
   border-radius: 3px;
@@ -9,6 +9,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: black;
-  padding-left: 1%;
+  color: white;
+  font-size: 1.5em;
+  /*padding-left: 1%;*/
 }
