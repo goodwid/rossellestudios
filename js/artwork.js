@@ -12,7 +12,7 @@ function Art (opts) {
 
 
 Art.prototype.toHtml = function() {
-  var appTemplate = $('#artwork-template').html();
+  var appTemplate = $('#slideshow-template').html();
   var compileTemplate = Handlebars.compile(appTemplate);
   var html = compileTemplate(this);
   return html;
@@ -26,4 +26,20 @@ rawData.forEach(function(ele) {
 
 artwork.forEach(function(a) {
   $('#past-work').append(a.toHtml());
+});
+
+$('#past-work').slidesjs( {
+  width: 400,
+  height: 300,
+  navigation: {
+    active: true,
+    effect: 'slide'
+  },
+  play: {
+    active: true,
+    interval: 5000,
+    auto: true,
+    pauseOnHover: true
+  }
+
 });

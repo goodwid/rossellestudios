@@ -13,39 +13,38 @@
         <img src="{{path}}" alt="{{title}}, {{year}}, {{media}}, {{show}}">
       </figure>
     </script>
+    <script id="slideshow-template" type="text/x-handlebar-template">
+      <img src="{{path}}" alt="{{title}}, {{year}}, {{media}}, {{show}}">
+    </script>
     <script id="selector-template" type="text/x-handlerbars-template">
       <option value="{{data}}">{{data}}</option>
     </script>
   </head>
-
-
   <body>
-
-
     <header class="content-width">
         <h1 class="center-content">Rosselle Studios</h1>
     </header>
-
     <nav class="main-nav center-content">
       <ul>
         <li class="nav-item tab"><a class="nav-link" href="#current-work">Current&nbsp;work</a></li>
         <li class="nav-item tab"><a class="nav-link" href="#past-work">Past&nbsp;work</a></li>
         <li class="nav-item tab"><a class="nav-link" href="#bio">Bio</a></li>
         <!-- <li class="nav-item"><a class="nav-link" href="#bio">blog</a></li> -->
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item tab"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
       <div id="social-icons">
         Social Media icons here.
       </div>
     </nav>
     <main>
-
       <div id="content">
         <section id="bio">
           bio.
         </section>
         <section id="current-work">Current work.</section>
-        <section id="past-work">Past work.</section>
+        <section id="past-work">
+
+        </section>
         <section id="contact">Contact form will go here.  Do something with mailchimp.</section>
       </div>
 
@@ -67,6 +66,7 @@
 
     <script src="lib/jquery-2.2.3.min.js"></script>
     <script src="lib/handlebars-latest.js"></script>
+    <script src="lib/jquery.slides.js"></script>
     <script src="js/artworkdata.js"></script>
     <script src="js/artwork.js"></script>
     <script src="js/veiwArtwork.js"></script>
