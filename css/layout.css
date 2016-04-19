@@ -7,29 +7,41 @@ body {
   height: 100%;
 }
 
-main {
+header {
+  margin-top: 0px;
+  height: 130px;
   position: fixed;
-  top: 120px;
+  z-index: 10;
+}
+
+header h1 {
+  margin: -14px;
+  font-size: 5em;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+main {
   left: 12%;
   overflow: scroll;
-  width: 69%;
-  bottom: 42px; 
+  width: 68.8%;
+  /*display: flex;*/
+  z-index: 4;
 }
 
-nav, aside {
+nav, aside, main {
   position: absolute;
-  top: 120px;
-}
-
-main {
-  display: flex;
-  height: 500px;
-
+  top: 130px;
+  bottom: 42px;
 }
 
 nav {
   width: 12%;
-  bottom: 42px;
+  min-width: 132px;
+}
+
+#content {
+  width: 100%;
 }
 
 aside {
@@ -37,16 +49,16 @@ aside {
   width: 19%;
   /*height: 400px;*/
   left: 80%;
-  bottom: 40px;
+  /*bottom: 40px;*/
 }
 
 main div {
-  margin-right: .5%;
-  width: 59%;
+  /*margin-right: .5%;*/
+  width: 100%;
 }
 
 main div section {
-  margin: 0 1%;
+  margin: 0;
   height: auto;
   width: 98%;
   display: flex;
@@ -56,19 +68,6 @@ main div section {
 
 }
 
-
-
-header {
-  margin-top: 0px;
-  height: 120px;
-  position: fixed;
-  z-index: 10;
-}
-
-header h1 {
-  margin: 0;
-  margin
-}
 
 footer {
   position: fixed;
@@ -89,7 +88,6 @@ img {
   width: 38%;
   height: 38%;
 }
-
 
 .content-width {
   width: 100%;
