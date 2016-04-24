@@ -10,7 +10,7 @@
     var compileTemplate = Handlebars.compile(appTemplate);
     var $sf = $('#show-filter');
 
-    Art.shows.sort().forEach(function (a) {
+    Art.shows.sort().forEach(function(a) {
       val.data = a;
       optionTag = compileTemplate(val);
       $sf.append(optionTag);
@@ -27,7 +27,6 @@
       }
       slideshowView.changeImage(100); // force past the end of the length, where it starts over at 0.
     });
-
   };
 
   artworkView.handleMainNav = function() {
@@ -42,54 +41,54 @@
     });
   };
 
-  function foo() {
-    console.log('foo!');
-  }
+  // artworkView.setRouteMappings = function() {
+  //   function foo() {
+  //     console.log('foo!');
+  //   }
+  //   var $mds = $('main > div > section');
+  //   page.base('/');
+  //
+  //   page ('', foo);
+  //   page('current', function() {
+  //     $mds.each(function() {
+  //       $(this).hide();
+  //     });
+  //     $('#artwork').show();
+  //     slideshow.populateSlideshow(Art.shows);
+  //     slideshowView.changeImage(100);
+  //   });
+  //   page('past', function() {
+  //     $mds.each(function() {
+  //       $(this).hide();
+  //     });
+  //     $('#artwork').show();
+  //     slideshow.populateSlideshow(Art.shows);
+  //     slideshowView.changeImage(100);
+  //   });
+  //   page('about', function() {
+  //     $mds.each(function() {
+  //       $(this).hide();
+  //     });
+  //     $('#bio').show();
+  //   });
+  //   page('contact', function() {
+  //     $mds.each(function() {
+  //       $(this).hide();
+  //     });
+  //     $('#contact').show();
+  //   });
+  //   page('*', foo); // Catch-all
+  //
+  //   page();
+  // };
 
-
-  artworkView.setRouteMappings = function() {
-    var $mds = $('main > div > section');
-    page.base('/');
-
-    page('current', function() {
-      $mds.each(function() {
-        $(this).hide();
-      });
-      $('#artwork').show();
-      slideshow.populateSlideshow(Art.shows);
-      slideshowView.changeImage(100);
-    });
-    page('past', function() {
-      $mds.each(function() {
-        $(this).hide();
-      });
-      $('#artwork').show();
-      slideshow.populateSlideshow(Art.shows);
-      slideshowView.changeImage(100);
-    });
-    page('about', function() {
-      $mds.each(function() {
-        $(this).hide();
-      });
-      $('#bio').show();
-    });
-    page('contact', function() {
-      $mds.each(function() {
-        $(this).hide();
-      });
-      $('#contact').show();
-    });
-    page('*', foo); // Catch-all
-
-    // page();
-  };
-
-  $(document).ready(function () {
+  artworkView.initIndexPage = function() {
     artworkView.populateFilter();
     artworkView.handleFilter();
-    artworkView.setRouteMappings();
-    // artworkView.handleMainNav();
-  });
+    // artworkView.setRouteMappings();
+    artworkView.handleMainNav();
+    slideshowView.init(Art.all);
+  };
 
   module.artworkView = artworkView;
 }(window));

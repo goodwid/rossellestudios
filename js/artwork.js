@@ -12,13 +12,6 @@
 
   Art.all = [];
 
-  Art.prototype.toHtml = function() {
-    var appTemplate = $('#artwork-template').html();
-    var compileTemplate = Handlebars.compile(appTemplate);
-    var html = compileTemplate(this);
-    return html;
-  };
-
   Art.filter = function(show) {
     return Art.all.filter(function(art) {
       return art.show == show;
@@ -26,28 +19,45 @@
   };
 
   Art.initShows = function() {
-    return Art.all.map(function (obj) {
-      return obj.show;
-    }).sort().reduce(function(prev,curr) {
-      if (curr != prev[0]) prev.unshift(curr);
-      return prev;
-    }, []);
+    return Art.all.map(obj => obj.show)
+      .sort().reduce(function(prev,curr) {
+        if (curr != prev[0]) prev.unshift(curr);
+        return prev;
+      }, []);
   };
-
 
   Art.loadAll = function(rawData) {
-    Art.all = rawData.map(function (ele) {
-      return new Art(ele);
-    });
+    Art.all = rawData.map(ele => new Art(ele));
   };
 
+  Art.fetchAll = function () {
+    var url = 'data/artwork.json';
 
-  // artwork.forEach(function(a) {
-  //   $('#past-work').append(a.toHtml());
-  // });
-  Art.init = function () {
-    Art.loadAll(rawData);
-    Art.shows = Art.initShows();
+    var jqXHR = $.ajax({
+      url: url,
+      type: 'HEAD',
+      dataType: 'json',
+      success: function () {
+        var eTag = jqXHR.getResponseHeader('ETag');
+        if ((localStorage.eTag === eTag) && (localStorage.rawData)) {
+          Art.loadAll(JSON.parse(localStorage.rawData));
+          Art.shows = Art.initShows();
+          artworkView.initIndexPage();
+        } else {
+          $.getJSON(url)
+          .done(function(rawData) {
+            Art.loadAll(rawData);
+            Art.shows = Art.initShows();
+            artworkView.initIndexPage();
+            localStorage.rawData = JSON.stringify(rawData);
+            localStorage.eTag = eTag;
+          })
+          .fail(function() {
+            console.log('getJSON failed, check JSON format or file presence.');
+          });
+        }
+      }
+    });
   };
 
   module.Art = Art;
