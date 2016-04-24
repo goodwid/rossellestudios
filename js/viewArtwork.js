@@ -20,7 +20,7 @@
   artworkView.handleFilter = function() {
     var $cf = $('#show-filter');
     $cf.on('change', function() {
-      if (!$(this).val()) {
+      if (!$(this).id()) {
         slideshow.populateSlideshow(Art.shows);
       } else {
         slideshow.populateSlideshow(Art.filter($(this).val()));
@@ -33,6 +33,8 @@
   artworkView.handleMainNav = function() {
     $('nav ul').on('click','.tab', function(event) {
       event.preventDefault();
+      var target = $(this).find('a').attr('href');
+      console.log(target);
       $('main > div > section').each(function() {
         $(this).hide();
       });
@@ -40,10 +42,53 @@
     });
   };
 
+  function foo() {
+    console.log('foo!');
+  }
+
+
+  artworkView.setRouteMappings = function() {
+    var $mds = $('main > div > section');
+    page.base('/');
+
+    page('current', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $('#artwork').show();
+      slideshow.populateSlideshow(Art.shows);
+      slideshowView.changeImage(100);
+    });
+    page('past', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $('#artwork').show();
+      slideshow.populateSlideshow(Art.shows);
+      slideshowView.changeImage(100);
+    });
+    page('about', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $('#bio').show();
+    });
+    page('contact', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $('#contact').show();
+    });
+    page('*', foo); // Catch-all
+
+    // page();
+  };
+
   $(document).ready(function () {
     artworkView.populateFilter();
     artworkView.handleFilter();
-    artworkView.handleMainNav();
+    artworkView.setRouteMappings();
+    // artworkView.handleMainNav();
   });
 
   module.artworkView = artworkView;

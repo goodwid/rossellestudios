@@ -14,8 +14,6 @@
   };
 
   slideshowView.changeImage = function(num) {
-    console.log('num', num);
-    console.log('before', slideshow.current);
     slideshow.current += num;
 
     if (slideshow.current > slideshow.images.length - 1) {
@@ -24,8 +22,6 @@
     if (slideshow.current <= -1) {
       slideshow.current = slideshow.images.length - 1;
     }
-    console.log('after', slideshow.current);
-
     var data = slideshow.images[slideshow.current].title + ', ' +
                slideshow.images[slideshow.current].show + ',  ' +
                slideshow.images[slideshow.current].year + '.';
