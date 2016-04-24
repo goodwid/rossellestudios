@@ -13,8 +13,8 @@
   Art.all = [];
 
   Art.filter = function(show) {
-    return Art.all.filter(function(art) {
-      return art.show == show;
+    return Art.all.filter(function(obj) {
+      return show.indexOf(obj.show) > -1;
     });
   };
 
@@ -46,11 +46,12 @@
         } else {
           $.getJSON(url)
           .done(function(rawData) {
+            localStorage.rawData = JSON.stringify(rawData);
+            localStorage.eTag = eTag;
+
             Art.loadAll(rawData);
             Art.shows = Art.initShows();
             artworkView.initIndexPage();
-            localStorage.rawData = JSON.stringify(rawData);
-            localStorage.eTag = eTag;
           })
           .fail(function() {
             console.log('getJSON failed, check JSON format or file presence.');

@@ -19,32 +19,45 @@
 
     <nav class="main-nav center-content">
       <ul>
-        <li class="nav-item tab"><a class="nav-link" href="#artwork">Current&nbsp;work</a></li>
+        <!-- <li class="nav-item tab"><a class="nav-link" href="#artwork">Current&nbsp;work</a></li>
         <li class="nav-item tab"><a class="nav-link" href="#artwork">Past&nbsp;work</a></li>
         <li class="nav-item tab"><a class="nav-link" href="#about">About&nbsp;Andrea</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" href="#bio">blog</a></li> -->
-        <li class="nav-item tab"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item tab"><a class="nav-link" href="#contact">Contact</a></li> -->
+
+
+        <li class="nav-item tab"><a class="nav-link" href="current">Current&nbsp;work</a></li>
+        <li class="nav-item tab"><a class="nav-link" href="past">Past&nbsp;work</a></li>
+        <li class="nav-item tab"><a class="nav-link" href="about">About&nbsp;Andrea</a></li>
+        <li class="nav-item tab"><a class="nav-link" href="contact">Contact</a></li>
       </ul>
       <div id="social-icons">
         Social Media icons here.
       </div>
     </nav>
-    <main>
 
-      <div id="content">
-        <section id="about">
-          bio.
-        </section>
+    <main>
+      <!-- <div id="content"> -->
+
         <section id="artwork">
           <img id="slideshow" src="">
-          <p id="controls">
+          <section id="controls">
             <button id="prev">Prev</button><input id="info" type="input"><button id="next">Next</button>
-          <p>
+            <select id="show-filter">
+              <option value="">-- Filter --</option>
+            </select>
+          </section>
         </section>
-        <section id="contact">Contact form will go here.  Do something with mailchimp.</section>
-      </div>
 
+
+
+        <section id="about">Andrea is an artist.</section>
+        <section id="contact">Contact form will go here.  Do something with mailchimp.</section>
+      <!-- </div> -->
     </main>
+
+
+
+
     <aside>
       <h3>Pinterest will go here.</h3>
     </aside>
@@ -54,9 +67,7 @@
 
     <footer class="center-content content-width">
       All images &copy; 1999-2016 Andrea Rosselle.
-      <select id="show-filter">
-        <option value="">-- Filter --</option>
-      </select>
+
     </footer>
 
 

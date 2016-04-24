@@ -26,7 +26,7 @@
                slideshow.images[slideshow.current].show + ',  ' +
                slideshow.images[slideshow.current].year + '.';
     slideshow.$data.val(data);
-    slideshow.$image.fadeOut(100);
+    slideshow.$image.hide();
     slideshow.$image.attr('src',slideshow.images[slideshow.current].path);
     slideshow.$image.fadeIn(600);
   };

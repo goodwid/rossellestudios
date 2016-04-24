@@ -20,7 +20,7 @@
   artworkView.handleFilter = function() {
     var $cf = $('#show-filter');
     $cf.on('change', function() {
-      if (!$(this).id()) {
+      if (!$(this).val()) {
         slideshow.populateSlideshow(Art.shows);
       } else {
         slideshow.populateSlideshow(Art.filter($(this).val()));
@@ -29,64 +29,67 @@
     });
   };
 
-  artworkView.handleMainNav = function() {
-    $('nav ul').on('click','.tab', function(event) {
-      event.preventDefault();
-      var target = $(this).find('a').attr('href');
-      console.log(target);
-      $('main > div > section').each(function() {
+  // artworkView.handleMainNav = function() {
+  //   $('nav ul').on('click','.tab', function(event) {
+  //     event.preventDefault();
+  //     var target = $(this).find('a').attr('href');
+  //     console.log(target);
+  //     $('main > div > section').each(function() {
+  //       $(this).hide();
+  //     });
+  //     $($(this).find('a').attr('href')).show();
+  //   });
+  // };
+
+  artworkView.setRouteMappings = function() {
+    function foo() {
+      console.log('foo!');
+    }
+    var $mds = $('main > section');
+    var $sf = $('#show-filter');
+    page.base('/');
+
+    page ('', foo);
+    page('current', function() {
+      $mds.each(function() {
         $(this).hide();
       });
-      $($(this).find('a').attr('href')).show();
+      $sf.hide();
+      $('#artwork').show();
+      slideshow.populateSlideshow(Art.filter('Biomorphic Bowls and Vases'));
+      slideshowView.changeImage(100);
     });
-  };
+    page('past', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $('#artwork').show();
+      $sf.show();
+      slideshow.populateSlideshow(Art.filter(Art.shows));
+      slideshowView.changeImage(100);
+    });
+    page('about', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $('#about').show();
+    });
+    page('contact', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $('#contact').show();
+    });
+    page('*', foo); // Catch-all
 
-  // artworkView.setRouteMappings = function() {
-  //   function foo() {
-  //     console.log('foo!');
-  //   }
-  //   var $mds = $('main > div > section');
-  //   page.base('/');
-  //
-  //   page ('', foo);
-  //   page('current', function() {
-  //     $mds.each(function() {
-  //       $(this).hide();
-  //     });
-  //     $('#artwork').show();
-  //     slideshow.populateSlideshow(Art.shows);
-  //     slideshowView.changeImage(100);
-  //   });
-  //   page('past', function() {
-  //     $mds.each(function() {
-  //       $(this).hide();
-  //     });
-  //     $('#artwork').show();
-  //     slideshow.populateSlideshow(Art.shows);
-  //     slideshowView.changeImage(100);
-  //   });
-  //   page('about', function() {
-  //     $mds.each(function() {
-  //       $(this).hide();
-  //     });
-  //     $('#bio').show();
-  //   });
-  //   page('contact', function() {
-  //     $mds.each(function() {
-  //       $(this).hide();
-  //     });
-  //     $('#contact').show();
-  //   });
-  //   page('*', foo); // Catch-all
-  //
-  //   page();
-  // };
+    page();
+  };
 
   artworkView.initIndexPage = function() {
     artworkView.populateFilter();
     artworkView.handleFilter();
-    // artworkView.setRouteMappings();
-    artworkView.handleMainNav();
+    artworkView.setRouteMappings();
+    // artworkView.handleMainNav();
     slideshowView.init(Art.all);
   };
 

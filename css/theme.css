@@ -3,7 +3,7 @@ body {
   font-family: 'Bad Script', cursive;
 }
 
-header, footer, nav, aside  {
+header, footer, nav, aside, #controls  {
   background-color: black;
   opacity: 0.8;
   color: white;
@@ -13,7 +13,7 @@ nav {
   opacity: 0.8;
 }
 main section {
-  background-color: #ddf;
+  background-color: #fff;
 }
 select {
   height: 1.7em;
