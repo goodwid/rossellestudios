@@ -4,15 +4,6 @@
     <meta charset="utf-8"></meta>
     <title>Rosselle Studios</title>
     <link rel="stylesheet" type="text/css" href="css/rosselle.css">
-
-    <script id="artwork-template" type="text/x-handlebar-template">
-      <figure class="artwork-item" data-show="{{show}}">
-        <figcaption>
-          <h3>{{title}}</h3>
-        </figcaption>
-        <img src="{{path}}" alt="{{title}}, {{year}}, {{media}}, {{show}}">
-      </figure>
-    </script>
     <script id="selector-template" type="text/x-handlerbars-template">
       <option value="{{data}}">{{data}}</option>
     </script>
@@ -44,7 +35,12 @@
         <section id="bio">
           bio.
         </section>
-        <section id="current-work"><img id="slideshow" src=""></section>
+        <section id="current-work">
+          <img id="slideshow" src="">
+          <p id="controls">
+            <button id="prev">Prev</button><input id="info" type="input"><button id="next">Next</button>
+          <p>
+        </section>
         <section id="past-work">Past work.</section>
         <section id="contact">Contact form will go here.  Do something with mailchimp.</section>
       </div>
@@ -68,8 +64,13 @@
     <script src="lib/jquery-2.2.3.min.js"></script>
     <script src="lib/handlebars-latest.js"></script>
     <script src="js/artworkdata.js"></script>
-    <script src="js/viewSlideshow.js"></script>
     <script src="js/artwork.js"></script>
     <script src="js/viewArtwork.js"></script>
+    <script src="js/viewSlideshow.js"></script>
+    <script>
+      Art.init();
+      slideshowView.init(Art.all);
+    </script>
+
   </body>
 </html>

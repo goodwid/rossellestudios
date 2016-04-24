@@ -44,6 +44,13 @@ nav {
   width: 100%;
 }
 
+#controls {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  left: 0%;
+}
+
 aside {
   margin-left: 1%;
   width: 19%;
@@ -106,6 +113,6 @@ img {
 }
 
 
-#bio, #past-work, .icon-menu, #show-filter, #contact {
+#bio, #past-work, .icon-menu, #contact {
   display: none;
 }

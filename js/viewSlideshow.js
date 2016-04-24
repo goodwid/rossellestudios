@@ -6,23 +6,29 @@
 
   slideshow.current = 0;
   slideshow.images = [];
-  slideshow.$image = $('slideshow');
+  slideshow.$image = $('#slideshow');
+  slideshow.$data = $('#info');
 
   slideshow.populateSlideshow = function(rawData) {
     slideshow.images = rawData;
   };
 
-
-
   slideshowView.changeImage = function(num) {
     slideshow.current += num;
+
     if (slideshow.current > slideshow.images.length - 1) {
       slideshow.current = 0;
     }
     if (slideshow.current <= -1) {
       slideshow.current = slideshow.images - 1;
     }
-    slideshow.$image.attr('src',slideshow.images[slideshow.current].path)
+    var data = slideshow.images[slideshow.current].title + ', ' +
+               slideshow.images[slideshow.current].show + ',  ' +
+               slideshow.images[slideshow.current].year + '.';
+    slideshow.$data.val(data);
+    slideshow.$image.fadeOut(500);
+    slideshow.$image.attr('src',slideshow.images[slideshow.current].path);
+    slideshow.$image.fadeIn(500);
   };
 
   slideshowView.handleButtons = function() {

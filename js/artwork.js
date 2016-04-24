@@ -25,14 +25,29 @@
     });
   };
 
-  Art.loadAll = function(rawData) {
-    Art.all = rawData.map(ele => new Art(ele));
+  Art.initCategories = function() {
+    return Art.all.map(function (obj) {
+      return obj.show;
+    }).sort().reduce(function(prev,curr) {
+      if (curr != prev[0]) prev.unshift(curr);
+      return prev;
+    }, []);
   };
 
-  slideshowView.init(Art.all);
+
+  Art.loadAll = function(rawData) {
+    Art.all = rawData.map(function (ele) {
+      return new Art(ele);
+    });
+  };
+
+
   // artwork.forEach(function(a) {
   //   $('#past-work').append(a.toHtml());
   // });
+  Art.init = function () {
+    Art.loadAll(rawData);
+  };
 
-  module.artwork = artwork;
+  module.Art = Art;
 }(window));

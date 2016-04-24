@@ -1,7 +1,7 @@
 var rawData = [
   {
     "year": 2010,
-    "show": "Hem Me In",
+    "show": "Hem Me In 2",
     "title": "Altered Abilities",
     "media": "Ceramic",
     "dimensions": 0,
@@ -9,7 +9,7 @@ var rawData = [
   },
   {
     "year": 2010,
-    "show": "Hem Me In",
+    "show": "Hem Me In 2",
     "title": "Cellular Gown",
     "media": "Fibers",
     "dimensions": 0,
@@ -17,7 +17,7 @@ var rawData = [
   },
   {
     "year": 2010,
-    "show": "Hem Me In",
+    "show": "Hem Me In 2",
     "title": "Cellular Growth",
     "media": "Fibers",
     "dimensions": 0,
@@ -81,7 +81,7 @@ var rawData = [
   },
   {
     "year": 2010,
-    "show": "Hem Me in",
+    "show": "Hem Me In",
     "title": "Research",
     "media": "Mixed Media",
     "dimensions": 0,
@@ -113,7 +113,7 @@ var rawData = [
   },
   {
     "year": 2010,
-    "show": "Hem Me in",
+    "show": "Hem Me In",
     "title": "The Medical Body",
     "media": "Mixed Media",
     "dimensions": 0,
