@@ -20,12 +20,12 @@
   };
 
   Art.filter = function(show) {
-    Art.all.filter(function(art) {
-      return art.show = show;
+    return Art.all.filter(function(art) {
+      return art.show == show;
     });
   };
 
-  Art.initCategories = function() {
+  Art.initShows = function() {
     return Art.all.map(function (obj) {
       return obj.show;
     }).sort().reduce(function(prev,curr) {
@@ -47,6 +47,7 @@
   // });
   Art.init = function () {
     Art.loadAll(rawData);
+    Art.shows = Art.initShows();
   };
 
   module.Art = Art;

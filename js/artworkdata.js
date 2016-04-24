@@ -1,7 +1,7 @@
 var rawData = [
   {
     "year": 2010,
-    "show": "Hem Me In 2",
+    "show": "Hem Me In",
     "title": "Altered Abilities",
     "media": "Ceramic",
     "dimensions": 0,
@@ -9,7 +9,7 @@ var rawData = [
   },
   {
     "year": 2010,
-    "show": "Hem Me In 2",
+    "show": "Hem Me In",
     "title": "Cellular Gown",
     "media": "Fibers",
     "dimensions": 0,
@@ -17,7 +17,7 @@ var rawData = [
   },
   {
     "year": 2010,
-    "show": "Hem Me In 2",
+    "show": "Hem Me In",
     "title": "Cellular Growth",
     "media": "Fibers",
     "dimensions": 0,

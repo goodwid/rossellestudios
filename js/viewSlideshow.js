@@ -14,21 +14,25 @@
   };
 
   slideshowView.changeImage = function(num) {
+    console.log('num', num);
+    console.log('before', slideshow.current);
     slideshow.current += num;
 
     if (slideshow.current > slideshow.images.length - 1) {
       slideshow.current = 0;
     }
     if (slideshow.current <= -1) {
-      slideshow.current = slideshow.images - 1;
+      slideshow.current = slideshow.images.length - 1;
     }
+    console.log('after', slideshow.current);
+
     var data = slideshow.images[slideshow.current].title + ', ' +
                slideshow.images[slideshow.current].show + ',  ' +
                slideshow.images[slideshow.current].year + '.';
     slideshow.$data.val(data);
-    slideshow.$image.fadeOut(500);
+    slideshow.$image.fadeOut(100);
     slideshow.$image.attr('src',slideshow.images[slideshow.current].path);
-    slideshow.$image.fadeIn(500);
+    slideshow.$image.fadeIn(600);
   };
 
   slideshowView.handleButtons = function() {

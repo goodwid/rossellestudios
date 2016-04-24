@@ -8,34 +8,26 @@
     var optionTag = '';
     var appTemplate = $('#selector-template').html();
     var compileTemplate = Handlebars.compile(appTemplate);
+    var $sf = $('#show-filter');
 
-    $('figure').each(function () {
-      val.data = $(this).attr('data-category');
+    Art.shows.sort().forEach(function (a) {
+      val.data = a;
       optionTag = compileTemplate(val);
-      if ($('#show-filter option[value="' + val.data + '"]').length === 0) {
-        $('#show-filter').append(optionTag);
-      }
+      $sf.append(optionTag);
     });
   };
 
   artworkView.handleFilter = function() {
-    var $cf = $('#category-filter');
-    var $pwf = $('#past-work figure');
+    var $cf = $('#show-filter');
     $cf.on('change', function() {
-      if ($(this).val()) {
-        $pwf.each(function() {
-          $(this).hide();
-        });
-
-        $pwf.filter(function() {
-          return $(this).attr('data-category') == $cf.val();
-        }).show();
+      if (!$(this).val()) {
+        slideshow.populateSlideshow(Art.shows);
       } else {
-        $pwf.each(function() {
-          $(this).show();
-        });
+        slideshow.populateSlideshow(Art.filter($(this).val()));
       }
+      slideshowView.changeImage(100); // force past the end of the length, where it starts over at 0.
     });
+
   };
 
   artworkView.handleMainNav = function() {

@@ -51,6 +51,10 @@ nav {
   left: 0%;
 }
 
+#info {
+  width: 300px;
+}
+
 aside {
   margin-left: 1%;
   width: 19%;
