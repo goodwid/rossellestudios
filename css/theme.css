@@ -3,19 +3,20 @@ body {
   font-family: 'Bad Script', cursive;
 }
 
-header, footer   {
-  background: #fdd;
+header, footer, nav, aside  {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
 }
+nav {
 
+  opacity: 0.8;
+}
 main section {
   background-color: #ddf;
 }
 select {
   height: 1.7em;
-}
-
-aside {
-  background-color: #dfd;h
 }
 
 .bg-color-white {

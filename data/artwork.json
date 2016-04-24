@@ -1,4 +1,4 @@
-var rawData = [
+[
   {
     "year": 2010,
     "show": "Hem Me In",
@@ -81,7 +81,7 @@ var rawData = [
   },
   {
     "year": 2010,
-    "show": "Hem Me in",
+    "show": "Hem Me In",
     "title": "Research",
     "media": "Mixed Media",
     "dimensions": 0,
@@ -113,7 +113,7 @@ var rawData = [
   },
   {
     "year": 2010,
-    "show": "Hem Me in",
+    "show": "Hem Me In",
     "title": "The Medical Body",
     "media": "Mixed Media",
     "dimensions": 0,

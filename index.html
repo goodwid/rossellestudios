@@ -4,15 +4,6 @@
     <meta charset="utf-8"></meta>
     <title>Rosselle Studios</title>
     <link rel="stylesheet" type="text/css" href="css/rosselle.css">
-
-    <script id="artwork-template" type="text/x-handlebar-template">
-      <figure class="artwork-item" data-show="{{show}}">
-        <img src="{{path}}" alt="{{title}}, {{year}}, {{media}}, {{show}}">
-        <footer>
-          <h3>{{title}}</h3>
-        </footer>
-      </figure>
-    </script>
     <script id="selector-template" type="text/x-handlerbars-template">
       <option value="{{data}}">{{data}}</option>
     </script>
@@ -23,31 +14,40 @@
 
 
     <header class="content-width">
-        <h2 class="center-content">Rosselle Studios</h2>
-        <nav class="main-nav center-content">
-          <ul>
-            <li class="nav-item tab"><a class="nav-link" href="#current-work">current work</a></li>
-            <li class="nav-item tab"><a class="nav-link" href="#past-work">past work</a></li>
-            <li class="nav-item tab"><a class="nav-link" href="#bio">Bio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#bio">blog</a></li>
-
-        </nav>
+        <h1 class="center-content">Rosselle Studios</h1>
     </header>
 
-
+    <nav class="main-nav center-content">
+      <ul>
+        <li class="nav-item tab"><a class="nav-link" href="#artwork">Current&nbsp;work</a></li>
+        <li class="nav-item tab"><a class="nav-link" href="#artwork">Past&nbsp;work</a></li>
+        <li class="nav-item tab"><a class="nav-link" href="#about">About&nbsp;Andrea</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#bio">blog</a></li> -->
+        <li class="nav-item tab"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div id="social-icons">
+        Social Media icons here.
+      </div>
+    </nav>
     <main>
+
       <div id="content">
-        <section id="bio">
+        <section id="about">
           bio.
         </section>
-        <section id="current-work">Current work.</section>
-        <section id="past-work">Past work.</section>
+        <section id="artwork">
+          <img id="slideshow" src="">
+          <p id="controls">
+            <button id="prev">Prev</button><input id="info" type="input"><button id="next">Next</button>
+          <p>
+        </section>
+        <section id="contact">Contact form will go here.  Do something with mailchimp.</section>
       </div>
-      <aside>
-        <h3>Pinterest will go here.</h3>
-      </aside>
-    </main>
 
+    </main>
+    <aside>
+      <h3>Pinterest will go here.</h3>
+    </aside>
 
 
 
@@ -62,8 +62,14 @@
 
     <script src="lib/jquery-2.2.3.min.js"></script>
     <script src="lib/handlebars-latest.js"></script>
-    <script src="js/artworkdata.js"></script>
+    <script src="lib/page.js"></script>
     <script src="js/artwork.js"></script>
-    <script src="js/veiwArtwork.js"></script>
+    <script src="js/viewArtwork.js"></script>
+    <script src="js/viewSlideshow.js"></script>
+    <script>
+      Art.fetchAll();
+
+    </script>
+
   </body>
 </html>

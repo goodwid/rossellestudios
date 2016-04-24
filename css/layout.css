@@ -1,25 +1,75 @@
 /** { border: 1px dashed red;}*/
 
-
-
 body {
   /*display: flex;
   flex-flow: row;
   justify-content: center;*/
+  height: 100%;
+}
+
+header {
+  margin-top: 0px;
+  height: 130px;
+  position: fixed;
+  z-index: 10;
+}
+
+header h1 {
+  margin: -14px;
+  font-size: 5em;
+  letter-spacing: 5px;
+  font-weight: 400;
 }
 
 main {
-  margin-top: 8px;
+  left: 12%;
+  overflow: scroll;
+  width: 68.8%;
+  /*display: flex;*/
+  z-index: 4;
 }
-main div {
-  margin-right: .5%;
-  width: 79%;
-  float: left;
 
+nav, aside, main {
+  position: absolute;
+  top: 130px;
+  bottom: 42px;
+}
+
+nav {
+  width: 12%;
+  min-width: 132px;
+}
+
+#content {
+  width: 100%;
+}
+
+#controls {
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  left: 0%;
+}
+
+#info {
+  width: 300px;
+}
+
+aside {
+  margin-left: 1%;
+  width: 19%;
+  /*height: 400px;*/
+  left: 80%;
+  /*bottom: 40px;*/
+}
+
+main div {
+  /*margin-right: .5%;*/
+  width: 100%;
 }
 
 main div section {
-  margin: 10px 1%;
+  margin: 0;
   height: auto;
   width: 98%;
   display: flex;
@@ -29,24 +79,11 @@ main div section {
 
 }
 
-aside {
-  margin-left: 1%;
-  float: right;
-  width: 19%;
-  height: 400px;
-}
-
-header {
-  margin-top: 0px;
-  height: 120px;
-}
-
-header h1 {
-
-}
 
 footer {
-  clear: both;
+  position: fixed;
+  bottom: 0px;
+  height: 42px;
 }
 
 ul {
@@ -62,7 +99,6 @@ img {
   width: 38%;
   height: 38%;
 }
-
 
 .content-width {
   width: 100%;
@@ -81,6 +117,6 @@ img {
 }
 
 
-#bio, #past-work, .icon-menu, #show-filter {
+#about, .icon-menu, #contact {
   display: none;
 }
