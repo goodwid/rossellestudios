@@ -37,29 +37,15 @@ artworkView.handleFilter = function() {
   });
 };
 
-
 artworkView.handleMainNav = function() {
-  $('nav ul').on('click','.tab', function(event) {   // Class needed here to differentiate li elements from other links in the nav bar.
+  $('nav ul').on('click','.tab', function(event) {
     event.preventDefault();
     $('main > div > section').each(function() {
       $(this).hide();
     });
     $($(this).find('a').attr('href')).show();
-
-    // if ($(this).find('a').attr('href') === '#about') {
-    //   $('header p').css('opacity','0');
-    // } else {
-    //   $('header p').css('opacity','1');
-    // }
-    // if($('.icon-menu').is(':visible')) {
-    //   $('nav ul').hide();
-    // }
   });
 };
-
-
-
-
 
 $(document).ready(function () {
   artworkView.populateFilter();
