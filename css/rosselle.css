@@ -3,10 +3,15 @@
 
 body {
   font-family: 'Bad Script', cursive;
-  height: auto;
+  height: 1200px;
+  overflow: hidden;
   background-color:  #FFF;
   margin: 0;
   padding: 0;
+  background-image: url(https://s3-us-west-2.amazonaws.com/rossellestudios/2016-Biomorphic_Bowls_and_Vases-Yellow_and_Medium_Green_Bowl_Large_Detail-Ceramics-Rosselle.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header, footer, nav, aside, #controls {
@@ -87,13 +92,17 @@ footer {
   height: 42px;
 }
 
-
+#artwork {
+  background-color: #333;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 #artwork img {
   max-height: 40%;
   max-width: 60%;
   height: auto;
-  object-fit: scale-down;
 }
 
 #about {

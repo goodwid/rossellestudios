@@ -6,7 +6,7 @@
 
   slideshow.current = 0;
   slideshow.images = [];
-  slideshow.$image = $('#slideshow');
+  slideshow.$image = $('#artwork');
   slideshow.$data = $('#info');
 
 
@@ -27,7 +27,8 @@
                slideshow.images[slideshow.current].year;
     slideshow.$data.val(data);
     slideshow.$image.hide();
-    slideshow.$image.attr('src',slideshow.images[slideshow.current].path);
+    slideshow.$image.css('background-image', 'url(' + slideshow.images[slideshow.current].path + ')');
+    // slideshow.$image.attr('src',slideshow.images[slideshow.current].path);
     slideshow.$image.fadeIn(600);
   };
 
