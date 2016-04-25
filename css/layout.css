@@ -4,7 +4,7 @@ body {
   /*display: flex;
   flex-flow: row;
   justify-content: center;*/
-  height: 100%;
+  height: auto;
 }
 
 header {
@@ -24,6 +24,8 @@ header h1 {
 main {
   left: 12%;
   width: 69%;
+  object-fit: contain;
+
 }
 
 nav, aside, main {
@@ -46,7 +48,7 @@ nav {
 }
 
 #info {
-  width: 300px;
+  width: 450px;
 }
 
 aside {
@@ -66,6 +68,8 @@ main section {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  object-fit: contain;
+
 
 }
 
@@ -91,8 +95,15 @@ min-width:100%;
 }*/
 
 #artwork img {
+    /*max-height: 100% !important;
   max-width: 100%;
-  max-height: 100%;
+  height: auto ;*/
+
+  object-fit: scale-down;
+}
+
+#about p {
+  margin: 4% 15px;
 }
 
 .content-width {
@@ -102,15 +113,6 @@ min-width:100%;
 .center-content {
   text-align: center;
 }
-
-.about-content {
-  margin-top: 20px;
-}
-
-.about-content p {
-  padding: 10px 20px;
-}
-
 
 #about, .icon-menu, #contact {
   display: none;

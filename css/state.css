@@ -1,11 +1,27 @@
-@media only screen and (min-width: 625px) {
-  nav ul {
-    display: block !important;
-  }
-}
 
-@media only screen and (max-width: 625px) {
+
+@media only screen and (max-width: 700px) {
+
+  aside {
+    display: none;
+  }
+
   header {
+    height: 90px;
+  }
+
+  header h1 {
+    font-size: 3em;
+    letter-spacing: normal;
+    margin-top: -5px;
+  }
+
+  nav, aside, main {
+    position: absolute;
+    top: 90px;
+    bottom: 42px;
+  }
+  /*header {
     margin-top: .5%;
     display: flex;
     flex-flow: column;
@@ -52,4 +68,4 @@
   /*.main-nav:hover ul {
     display: block;
   }*/
-}
+}*/
