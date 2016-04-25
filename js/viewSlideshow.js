@@ -29,7 +29,7 @@
     slideshow.$image.hide();
     slideshow.$image.css('background-image', 'url(' + slideshow.images[slideshow.current].path + ')');
     // slideshow.$image.attr('src',slideshow.images[slideshow.current].path);
-    slideshow.$image.fadeIn(600);
+    slideshow.$image.show();
   };
 
   slideshowView.handleButtons = function() {

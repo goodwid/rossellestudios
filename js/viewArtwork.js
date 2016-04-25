@@ -41,49 +41,49 @@
     });
   };
 
-  // artworkView.setRouteMappings = function() {
-  //   function foo() {
-  //     console.log('foo!');
-  //   }
-  //   var $mds = $('main > section');
-  //   var $sf = $('#show-filter');
-  //   page.base('/');
-  //
-  //   page ('', foo);
-  //   page('current', function() {
-  //     $mds.each(function() {
-  //       $(this).hide();
-  //     });
-  //     $sf.hide();
-  //     $('#artwork').show();
-  //     slideshow.populateSlideshow(Art.filter('Biomorphic Bowls and Vases'));
-  //     slideshowView.changeImage(100);
-  //   });
-  //   page('past', function() {
-  //     $mds.each(function() {
-  //       $(this).hide();
-  //     });
-  //     $('#artwork').show();
-  //     $sf.show();
-  //     slideshow.populateSlideshow(Art.filter(Art.shows));
-  //     slideshowView.changeImage(100);
-  //   });
-  //   page('about', function() {
-  //     $mds.each(function() {
-  //       $(this).hide();
-  //     });
-  //     $('#about').show();
-  //   });
-  //   page('contact', function() {
-  //     $mds.each(function() {
-  //       $(this).hide();
-  //     });
-  //     $('#contact').show();
-  //   });
-  //   page('*', foo); // Catch-all
-  //
-  //   page();
-  // };
+  artworkView.setRouteMappings = function() {
+    function foo() {
+      console.log('foo!');
+    }
+    var $mds = $('main > section');
+    var $sf = $('#show-filter');
+    page.base('/');
+
+    page ('', foo);
+    page('current', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $sf.hide();
+      $('#artwork').show();
+      slideshow.populateSlideshow(Art.filter('Biomorphic Bowls and Vases'));
+      slideshowView.changeImage(100);
+    });
+    page('past', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $('#artwork').show();
+      $sf.show();
+      slideshow.populateSlideshow(Art.filter(Art.shows));
+      slideshowView.changeImage(100);
+    });
+    page('about', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $('#about').show();
+    });
+    page('contact', function() {
+      $mds.each(function() {
+        $(this).hide();
+      });
+      $('#contact').show();
+    });
+    page('*', foo); // Catch-all
+
+    page();
+  };
 
   artworkView.initIndexPage = function() {
     artworkView.populateFilter();
