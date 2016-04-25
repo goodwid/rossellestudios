@@ -29,17 +29,17 @@
     });
   };
 
-  // artworkView.handleMainNav = function() {
-  //   $('nav ul').on('click','.tab', function(event) {
-  //     event.preventDefault();
-  //     var target = $(this).find('a').attr('href');
-  //     console.log(target);
-  //     $('main > div > section').each(function() {
-  //       $(this).hide();
-  //     });
-  //     $($(this).find('a').attr('href')).show();
-  //   });
-  // };
+  artworkView.handleMainNav = function() {
+    $('nav ul').on('click','.tab', function(event) {
+      event.preventDefault();
+      var target = $(this).find('a').attr('href');
+      console.log(target);
+      $('main > div > section').each(function() {
+        $(this).hide();
+      });
+      $($(this).find('a').attr('href')).show();
+    });
+  };
 
   artworkView.setRouteMappings = function() {
     function foo() {
