@@ -87,9 +87,7 @@ footer {
   height: 42px;
 }
 
-nav ul {
-  padding: 0;
-}
+
 
 #artwork img {
   max-height: 40%;
@@ -112,6 +110,11 @@ nav ul {
 
 select {
   height: 1.7em;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none
 }
 
 .nav-item {
