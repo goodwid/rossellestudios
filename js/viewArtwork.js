@@ -88,8 +88,8 @@
   artworkView.initIndexPage = function() {
     artworkView.populateFilter();
     artworkView.handleFilter();
-    artworkView.setRouteMappings();
-    // artworkView.handleMainNav();
+    // artworkView.setRouteMappings();
+    artworkView.handleMainNav();
     slideshowView.init(Art.all);
   };
 
