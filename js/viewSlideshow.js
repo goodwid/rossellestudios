@@ -16,7 +16,6 @@
 
   slideshowView.changeImage = function(num) {
     slideshow.current += num;
-    console.log(slideshow.$image.parent().height());
     if (slideshow.current > slideshow.images.length - 1) {
       slideshow.current = 0;
     }
@@ -29,7 +28,6 @@
     slideshow.$data.val(data);
     slideshow.$image.hide();
     slideshow.$image.attr('src',slideshow.images[slideshow.current].path);
-    // slideshow.$image.height(slideshow.$image.parent().height());
     slideshow.$image.fadeIn(600);
   };
 
