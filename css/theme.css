@@ -1,28 +1,4 @@
 
 body {
-  font-family: 'Bad Script', cursive;
-}
 
-header, footer, nav, aside  {
-  background-color: black;
-  opacity: 0.8;
-  color: white;
-}
-nav {
-
-  opacity: 0.8;
-}
-main section {
-  background-color: #ddf;
-}
-select {
-  height: 1.7em;
-}
-
-.bg-color-white {
-  background-color: white;
-}
-
-.project-title {
-  font-style:italic;
 }
