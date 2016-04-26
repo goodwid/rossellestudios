@@ -66,6 +66,49 @@ nav {
   z-index: 10;
   background-color: #333322;
 }
+#info {
+  position: absolute;
+  height: 2em;
+  width: 500px;
+  bottom: 10px;
+  left: calc(50% - 250px);
+  background-color: rgba(255,255,255,.5);
+  color: rgba(0,0,0,1);
+}
+
+#left-side, #right-side {
+  opacity: 0;
+}
+
+#button-left, #button-right {
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+}
+
+#button-left {
+  left: 5%;
+}
+
+#button-right {
+  right: 5%;
+}
+
+
+#left-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+}
+
+#right-side {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+}
 
 #about, #contact {
   width: 97%;
@@ -92,9 +135,6 @@ nav {
   color: rgba(255,255,255,1);
 }
 
-#info {
-  width: 500px;
-}
 
 .fa {
   color: #fff;

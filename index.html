@@ -45,13 +45,13 @@
     <main>
       <section id="slideshow">
         <section id="slideshow-image">
+          <i id="button-left" class="fa fa-chevron-circle-left fa-3x"></i>
+          <i id="button-right" class="fa fa-chevron-circle-right fa-3x"></i>
+          <div id="left-side"></div>
+          <div id="right-side"></div>
+          <div id="info" class="center-content"></div>
         </section>
-        <section id="controls" class="center-content">
-          <p><button id="prev">Prev</button> <input id="info" type="input"> <button id="next">Next</button> <p>
-          <select id="show-filter">
-            <option value="">-- Filter --</option>
-          </select>
-        </section>
+
       </section>
 
       <section id="about">
@@ -117,7 +117,9 @@
 
     <footer class="center-content content-width">
       All images &copy; 1999-2016 Andrea Rosselle.
-
+      <select id="show-filter">
+        <option value="">-- Filter --</option>
+      </select>
     </footer>
 
     <script async defer src="http://assets.pinterest.com/js/pinit.js"></script>
