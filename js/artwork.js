@@ -19,11 +19,14 @@
   };
 
   Art.initShows = function() {
-    return Art.all.map(obj => obj.show)
+    Art.current = 'Biomorphic Bowls and Vases';
+    var shows = Art.all.map(obj => obj.show)
       .sort().reduce(function(prev,curr) {
         if (curr != prev[0]) prev.unshift(curr);
         return prev;
       }, []);
+    Art.past = shows.filter(a => a !== Art.current);
+    return shows;
   };
 
   Art.loadAll = function(rawData) {

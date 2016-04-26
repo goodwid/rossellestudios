@@ -143,6 +143,6 @@ nav ul {
   text-align: center;
 }
 
-#about, .icon-menu, #contact {
+#about, .icon-menu, #show-filter, #contact {
   display: none;
 }
