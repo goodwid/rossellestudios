@@ -1,7 +1,7 @@
 (function(module) {
 
   function Art (opts) {
-    var pathPrefix = 'images/';
+    var pathPrefix = 'https://s3-us-west-2.amazonaws.com/rossellestudios/';
     this.title = opts.title;
     this.media = opts.media;
     this.show = opts.show;
@@ -19,11 +19,14 @@
   };
 
   Art.initShows = function() {
-    return Art.all.map(obj => obj.show)
+    Art.current = 'Biomorphic Bowls and Vases';
+    var shows = Art.all.map(obj => obj.show)
       .sort().reduce(function(prev,curr) {
         if (curr != prev[0]) prev.unshift(curr);
         return prev;
       }, []);
+    Art.past = shows.filter(a => a !== Art.current);
+    return shows;
   };
 
   Art.loadAll = function(rawData) {
@@ -31,7 +34,7 @@
   };
 
   Art.fetchAll = function () {
-    var url = 'data/artwork.json';
+    var url = '/data/artwork.json';
 
     var jqXHR = $.ajax({
       url: url,

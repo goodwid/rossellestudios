@@ -1,12 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Bad+Script);
-@import url("state.css");
 
 body {
   font-family: 'Bad Script', cursive;
-  height: auto;
+  height: 1200px;
+  overflow: hidden;
   background-color:  #FFF;
   margin: 0;
   padding: 0;
+  background-image: url(https://s3-us-west-2.amazonaws.com/rossellestudios/2016-Biomorphic_Bowls_and_Vases-Yellow_and_Medium_Green_Bowl_Large_Detail-Ceramics-Rosselle.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header, footer, nav, aside, #controls {
@@ -49,16 +53,91 @@ nav {
   min-width: 132px;
 }
 
+#slideshow {
+  height: 100%;
+}
+
+#slideshow-image {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*opacity: 1 !important;*/
+  size: 95%;
+  z-index: 10;
+  background-color: #333322;
+}
+#info {
+  position: absolute;
+  height: 2em;
+  width: 500px;
+  bottom: 10px;
+  left: calc(50% - 250px);
+  background-color: rgba(255,255,255,.5);
+  color: rgba(0,0,0,1);
+}
+
+#left-side, #right-side {
+  opacity: 0;
+}
+
+#button-left, #button-right {
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+}
+
+#button-left {
+  left: 5%;
+}
+
+#button-right {
+  right: 5%;
+}
+
+
+#left-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+}
+
+#right-side {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+}
+
+#about, #contact {
+  width: 97%;
+  overflow: scroll;
+  padding: 3% inherit;
+  padding-left: +3%;
+  font-size: 160%;
+  background-color: #ddd;
+  opacity: .95;
+}
+
+#about p {
+  margin: 4% 15px;
+
+}
+
 #controls {
   position: absolute;
   bottom: 0;
   height: 5%;
   left: 0%;
   width: 100%;
+  z-index: 15;
+  color: rgba(255,255,255,1);
 }
 
-#info {
-  width: 450px;
+
+.fa {
+  color: #fff;
 }
 
 aside {
@@ -85,23 +164,6 @@ footer {
   position: fixed;
   bottom: 0px;
   height: 42px;
-}
-
-
-
-#artwork img {
-  max-height: 40%;
-  max-width: 60%;
-  height: auto;
-  object-fit: scale-down;
-}
-
-#about {
-  overflow: scroll;
-}
-
-#about p {
-  margin: 4% 15px;
 }
 
 .content-width {
@@ -134,6 +196,6 @@ nav ul {
   text-align: center;
 }
 
-#about, .icon-menu, #contact {
+#about, .icon-menu, #show-filter, #contact {
   display: none;
 }

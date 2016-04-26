@@ -6,7 +6,7 @@
 
   slideshow.current = 0;
   slideshow.images = [];
-  slideshow.$image = $('#slideshow');
+  slideshow.$image = $('#slideshow-image');
   slideshow.$data = $('#info');
 
 
@@ -25,17 +25,19 @@
     var data = slideshow.images[slideshow.current].title + ', ' +
                slideshow.images[slideshow.current].show + ',  ' +
                slideshow.images[slideshow.current].year;
-    slideshow.$data.val(data);
+    slideshow.$data.text(data);
     slideshow.$image.hide();
-    slideshow.$image.attr('src',slideshow.images[slideshow.current].path);
-    slideshow.$image.fadeIn(600);
+    slideshow.$image.css('background-image', 'url(' + slideshow.images[slideshow.current].path + ')');
+    // slideshow.$image.attr('src',slideshow.images[slideshow.current].path);
+    slideshow.$image.show();
   };
 
   slideshowView.handleButtons = function() {
-    $('#prev').on('click', function() {
+
+    $('#left-side, #button-left').on('click', function() {
       slideshowView.changeImage(-1);
     });
-    $('#next').on('click', function() {
+    $('#right-side, #button-right').on('click', function() {
       slideshowView.changeImage(1);
     });
   };
