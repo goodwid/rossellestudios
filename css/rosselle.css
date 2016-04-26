@@ -54,16 +54,51 @@ nav {
   min-width: 132px;
 }
 
+#slideshow {
+  height: 100%;
+}
+
+#slideshow-image {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*opacity: 1 !important;*/
+  size: 95%;
+  z-index: 10;
+  background-color: #333322;
+}
+
+#about, #contact {
+  width: 97%;
+  overflow: scroll;
+  padding: 3% inherit;
+  padding-left: +3%;
+  font-size: 160%;
+  background-color: #ddd;
+  opacity: .95;
+}
+
+#about p {
+  margin: 4% 15px;
+
+}
+
 #controls {
   position: absolute;
   bottom: 0;
   height: 5%;
   left: 0%;
   width: 100%;
+  z-index: 15;
+  color: rgba(255,255,255,1);
 }
 
 #info {
-  width: 450px;
+  width: 500px;
+}
+
+.fa {
+  color: #fff;
 }
 
 aside {
@@ -90,27 +125,6 @@ footer {
   position: fixed;
   bottom: 0px;
   height: 42px;
-}
-
-#artwork {
-  background-color: #333;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#artwork img {
-  max-height: 40%;
-  max-width: 60%;
-  height: auto;
-}
-
-#about {
-  overflow: scroll;
-}
-
-#about p {
-  margin: 4% 15px;
 }
 
 .content-width {

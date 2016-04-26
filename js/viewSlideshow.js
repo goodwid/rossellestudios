@@ -6,7 +6,7 @@
 
   slideshow.current = 0;
   slideshow.images = [];
-  slideshow.$image = $('#artwork');
+  slideshow.$image = $('#slideshow-image');
   slideshow.$data = $('#info');
 
 
