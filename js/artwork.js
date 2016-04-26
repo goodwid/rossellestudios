@@ -34,7 +34,7 @@
   };
 
   Art.fetchAll = function () {
-    var url = 'data/artwork.json';
+    var url = '/data/artwork.json';
 
     var jqXHR = $.ajax({
       url: url,
