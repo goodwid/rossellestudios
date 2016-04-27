@@ -6,7 +6,7 @@
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
-  size: 95%;
+  size: 100%;
   z-index: 10;
   background-color: #333322;
 }
@@ -39,7 +39,6 @@
   right: 5%;
 }
 
-
 #left-side {
   position: absolute;
   top: 0;
@@ -52,5 +51,6 @@
   position: absolute;
   top: 0;
   left: 50%;
+  width: 50%;
   height: 100%;
 }

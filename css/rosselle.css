@@ -31,7 +31,7 @@ main section {
 }
 
 header h1 {
-  margin: -14px;
+  margin-top: -14px;
   font-size: 5em;
   letter-spacing: 5px;
   font-weight: 400;
@@ -81,8 +81,9 @@ aside {
   left: 81%;
 }
 
-main div {
-  width: 100%;
+aside section {
+  width: 85%;
+  margin: 0 auto;
 }
 
 main section {
@@ -115,10 +116,10 @@ nav ul {
   list-style: none
 }
 
-.nav-item {
+nav ul li {
   background-color: black;
   padding: 0 3%;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   height: 40px;
 }
 
