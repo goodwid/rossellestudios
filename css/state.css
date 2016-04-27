@@ -1,5 +1,7 @@
 @media only screen and (max-width: 1100px) {
-
+  body {
+    overflow: hidden;
+  }
   header {
     height: 90px;
   }
@@ -27,33 +29,52 @@
     width: 100%;
     top: 90px;
     height: 60px;
+
   }
 
   nav ul {
-    /*margin-top: -19px;*/
+    position: absolute;
+    top:0;
+    left: 100px;
+    margin: 0;
   }
+
   nav ul li {
-    display: inline-block;
+    height: 18px;
+    padding: 0;
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
   }
+
   .nav-link {
     text-decoration: none;
     color: white;
     font-size: 1em;
+    font-weight: 700;
   }
 
+  .nav-item {
+
+  }
 
   footer {
     height: 30px;
-    text-align: right !important;
   }
 
   #social-icons {
     position: absolute;
-    bottom: 0px;
-    left: 0px;
+    top: 0px;
+    left: 10px;
+  }
+
+  #show-filter {
+    display: none;
   }
 
   #info {
-    width: 290px;
+    /*position: relative;*/
+    width: 100%;
+    min-width: 30%;
   }
 }
