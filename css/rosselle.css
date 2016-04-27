@@ -13,7 +13,7 @@ body {
   background-repeat: no-repeat;
 }
 
-header, footer, nav, aside, #controls {
+header, footer, nav, aside {
   background-color: black;
   opacity: 0.8;
   color: white;
@@ -53,61 +53,10 @@ nav {
   min-width: 132px;
 }
 
-#slideshow {
-  height: 100%;
-}
-
-#slideshow-image {
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  /*opacity: 1 !important;*/
-  size: 95%;
-  z-index: 10;
-  background-color: #333322;
-}
-#info {
+#social-icons {
   position: absolute;
-  height: 2em;
-  width: 500px;
-  bottom: 10px;
-  left: calc(50% - 250px);
-  background-color: rgba(255,255,255,.5);
-  color: rgba(0,0,0,1);
-}
-
-#left-side, #right-side {
-  opacity: 0;
-}
-
-#button-left, #button-right {
-  opacity: 0.5;
-  position: absolute;
-  top: 50%;
-}
-
-#button-left {
-  left: 5%;
-}
-
-#button-right {
-  right: 5%;
-}
-
-
-#left-side {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 50%;
-}
-
-#right-side {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: 100%;
+  bottom: 0;
+  left: calc(50% - 48px);
 }
 
 #about, #contact {
@@ -116,25 +65,12 @@ nav {
   padding: 3% inherit;
   padding-left: +3%;
   font-size: 160%;
-  background-color: #ddd;
-  opacity: .95;
+  background-color: rgba(240,240,240,.85);
 }
 
 #about p {
   margin: 4% 15px;
-
 }
-
-#controls {
-  position: absolute;
-  bottom: 0;
-  height: 5%;
-  left: 0%;
-  width: 100%;
-  z-index: 15;
-  color: rgba(255,255,255,1);
-}
-
 
 .fa {
   color: #fff;
@@ -196,6 +132,6 @@ nav ul {
   text-align: center;
 }
 
-#about, .icon-menu, #show-filter, #contact {
+#about, #show-filter, #contact {
   display: none;
 }

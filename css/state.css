@@ -32,6 +32,7 @@
   nav ul {
     /*margin-top: -19px;*/
   }
+
   nav ul li {
     display: inline-block;
   }
@@ -49,7 +50,7 @@
 
   #social-icons {
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     left: 0px;
   }
 
