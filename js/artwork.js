@@ -20,17 +20,23 @@
 
   Art.initShows = function() {
     Art.current = 'Biomorphic Bowls and Vases';
-    var shows = Art.all.map(obj => obj.show)
+    var shows = Art.all.map(function (obj) {
+      return obj.show;
+    })
       .sort().reduce(function(prev,curr) {
         if (curr != prev[0]) prev.unshift(curr);
         return prev;
       }, []);
-    Art.past = shows.filter(a => a !== Art.current);
+    Art.past = shows.filter(function(a) {
+      return a !== Art.current;
+    });
     return shows;
   };
 
   Art.loadAll = function(rawData) {
-    Art.all = rawData.map(ele => new Art(ele));
+    Art.all = rawData.map(function (ele) {
+      return new Art(ele);
+    });
   };
 
   Art.fetchAll = function () {
