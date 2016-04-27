@@ -29,6 +29,7 @@
   opacity: 0.5;
   position: absolute;
   top: 50%;
+  cursor:pointer;
 }
 
 #button-left {
