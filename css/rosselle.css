@@ -101,6 +101,7 @@ footer {
   position: fixed;
   bottom: 0px;
   height: 42px;
+  z-index: -100;
 }
 
 .content-width {
