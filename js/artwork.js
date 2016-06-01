@@ -1,8 +1,8 @@
 (function(module) {
 
   function Art (opts) {
-    // var pathPrefix = 'https://s3-us-west-2.amazonaws.com/rossellestudios/';
-    var pathPrefix = 'sized-images/';
+    var pathPrefix = 'https://s3-us-west-2.amazonaws.com/rossellestudios/';
+    // var pathPrefix = 'sized-images/';
 
     this.title = opts.title;
     this.media = opts.media;
