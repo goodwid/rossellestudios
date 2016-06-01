@@ -1,0 +1,25 @@
+{
+  "name": "rossellestudios-site",
+  "version": "0.1.0",
+  "description": "Website for Andrea Rosselle",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.0.1",
+    "imagemin": "^5.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodwid/rossellestudios.git"
+  },
+  "author": "David Goodwin <goodwid@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goodwid/rossellestudios/issues"
+  },
+  "homepage": "https://github.com/goodwid/rossellestudios#readme"
+}
