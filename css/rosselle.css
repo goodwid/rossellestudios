@@ -52,6 +52,7 @@ nav {
   width: 12%;
   min-width: 132px;
 }
+\
 
 #social-icons {
   position: absolute;
@@ -81,7 +82,7 @@ aside {
   left: 81%;
 }
 
-aside section {
+side section {
   width: 85%;
   margin: 0 auto;
 }
