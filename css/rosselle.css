@@ -7,7 +7,7 @@ body {
   background-color:  #FFF;
   margin: 0;
   padding: 0;
-  background-image: url(https://s3-us-west-2.amazonaws.com/rossellestudios/background.jpg);
+  background-image: url(https://s3-us-west-2.amazonaws.com/rossellestudios/2016-Biomorphic_Bowls_and_Vases-Yellow_and_Medium_Green_Bowl_Large_Detail-Ceramics-Rosselle.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,6 +52,7 @@ nav {
   width: 12%;
   min-width: 132px;
 }
+\
 
 #social-icons {
   position: absolute;
@@ -81,7 +82,7 @@ aside {
   left: 81%;
 }
 
-aside section {
+side section {
   width: 85%;
   margin: 0 auto;
 }
