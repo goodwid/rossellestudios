@@ -1,235 +1,362 @@
 [
   {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Green Jar",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Green_Jar-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Green Jar Detail",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Green_Jar_Detail-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Three Legged Jar",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Three_Legged_Jar-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Three Legged Jar Back",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Three_Legged_Jar_Back-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Angel Child and Biologic Triptych",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Angel_Child_and_Biologic_Triptych-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Angel Child and Biologic Triptych Detail",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Angel_Child_and_Biologic_Triptych_Detail-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Circle Wall Tile",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Circle_Wall_Tile-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Flower Shrine",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Flower_Shrine-Rosselle.png"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Let the Light In",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Let_the_Light_In-Rosselle.jpg"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Let the Light In Detail",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Let_the_Light_In_Detail-Rosselle.jpg"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Mermaid Shrine",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Mermaid_Shrine-Rosselle.png"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Mermaid Shrine Detail",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Mermaid_Shrine_Detail-Rosselle.jpg"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Organic Stacked Vase",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Organic_Stacked_Vase-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Pattern of Disease",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Pattern_of_Disease-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Pattern of Disease Detail",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Pattern_of_Disease_Detail-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Piece of Mind",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Piece_of_Mind-Rosselle.JPG"
+  },
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Piece of Mind Detail",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Piece_of_Mind_Detail-Rosselle.JPG"
+  },
+
+  {
+    "year":2016,
+    "show":"Biomorphics",
+    "title":"Tri Toned Vase",
+    "media":"Ceramics",
+    "filename":"2016-Biomorphics-Tri_Toned_Vase-Rosselle.JPG"
+  },
+  {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Blue and Green Bowl with Feet",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Blue_and_Green_Bowl_with_Feet-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Blue_and_Green_Bowl_with_Feet-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Blue and White Bowl with Feet Small",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Blue_and_White_Bowl_with_Feet_Small-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Blue_and_White_Bowl_with_Feet_Small-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Blue Green and White Bowl with Feet",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Blue_Green_and_White_Bowl_with_Feet-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Blue_Green_and_White_Bowl_with_Feet-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Blue Green and White Bowl with Feet Detail",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Blue_Green_and_White_Bowl_with_Feet_Detail-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Blue_Green_and_White_Bowl_with_Feet_Detail-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Bud Vase Dark Green Detail with Purple Flowers",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Bud_Vase_Dark_Green_Detail_with_Purple_Flowers-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Bud_Vase_Dark_Green_Detail_with_Purple_Flowers-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Bud Vase Dark Green with Purple Flowers",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Bud_Vase_Dark_Green_with_Purple_Flowers-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Bud_Vase_Dark_Green_with_Purple_Flowers-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Bud Vase Medium Green Detail with White Flower",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Bud_Vase_Medium_Green_Detail_with_White_Flower-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Bud_Vase_Medium_Green_Detail_with_White_Flower-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Bud Vase Medium Green with White Flower",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Bud_Vase_Medium_Green_with_White_Flower-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Bud_Vase_Medium_Green_with_White_Flower-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Bud Vase with Rose",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Bud_Vase_with_Rose-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Bud_Vase_with_Rose-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Bud Vase with Rose Detail",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Bud_Vase_with_Rose_Detail-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Bud_Vase_with_Rose_Detail-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Cream and Light Green Medium Bowl Bottom",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Cream_and_Light_Green_Medium_Bowl_Bottom-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Cream_and_Light_Green_Medium_Bowl_Bottom-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Cream and Light Green Three Bowls",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Cream_and_Light_Green_Three_Bowls-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Cream_and_Light_Green_Three_Bowls-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Dark Green and Yellow Large Bowl",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Dark_Green_and_Yellow_Large_Bowl-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Dark_Green_and_Yellow_Large_Bowl-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Dark Green with Yellow Interior Bowl",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Dark_Green_with_Yellow_Interior_Bowl-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Dark_Green_with_Yellow_Interior_Bowl-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Dark Green with Yellow Interior Bowl Close Up",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Dark_Green_with_Yellow_Interior_Bowl_Close_Up-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Dark_Green_with_Yellow_Interior_Bowl_Close_Up-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Green and Blue Two Bowls",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Green_and_Blue_Two_Bowls-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Green_and_Blue_Two_Bowls-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Green and Yellow Bowl with Legs",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Green_and_Yellow_Bowl_with_Legs-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Green_and_Yellow_Bowl_with_Legs-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Green and Yellow Small Bowls Top and Bottom",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Green_and_Yellow_Small_Bowls_Top_and_Bottom-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Green_and_Yellow_Small_Bowls_Top_and_Bottom-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Kidney Shaped Green and Yellow Vase",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Kidney_Shaped_Green_and_Yellow_Vase-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Kidney_Shaped_Green_and_Yellow_Vase-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Kidney Shaped Green and Yellow Vase Detail",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Kidney_Shaped_Green_and_Yellow_Vase_Detail-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Kidney_Shaped_Green_and_Yellow_Vase_Detail-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Yellow and Medium Green Bowl Large",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Yellow_and_Medium_Green_Bowl_Large-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Yellow_and_Medium_Green_Bowl_Large-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Yellow and Medium Green Bowl Large Detail",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Yellow_and_Medium_Green_Bowl_Large_Detail-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Yellow_and_Medium_Green_Bowl_Large_Detail-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Botanical Tile Small Four",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Botanical_Tile_Small_Four-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Botanical_Tile_Small_Four-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Botanical Tile Large Light Green",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Botanical_Tile_Large_Light_Green-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Botanical_Tile_Large_Light_Green-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Botanical Tile Small One",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Botanical_Tile_Small_One-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Botanical_Tile_Small_One-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Wall Bud Vase Dark Green with White Flower",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Wall_Bud_Vase_Dark_Green_with_White_Flower-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Wall_Bud_Vase_Dark_Green_with_White_Flower-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Wall Bud Vase Green with Pink Flower",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Wall_Bud_Vase_Green_with_Pink_Flower-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Wall_Bud_Vase_Green_with_Pink_Flower-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Wall Bud Vase Green with Rose",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Wall_Bud_Vase_Green_with_Rose-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Wall_Bud_Vase_Green_with_Rose-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2016,
-    "show": "Biomorphic Bowls and Vases",
+    "show": "Biomorphics",
     "title": "Wall Bud Vase Light Yellow Green",
     "media": "Ceramics",
     "dimensions": 0,
-    "filename": "2016-Biomorphic_Bowls_and_Vases-Wall_Bud_Vase_Light_Yellow_Green-Ceramics-Rosselle.jpg"
+    "filename": "2016-Biomorphics-Wall_Bud_Vase_Light_Yellow_Green-Ceramics-Rosselle.jpg"
   },
   {
     "year": 2014,
@@ -323,14 +450,6 @@
   {
     "year": 2013,
     "show": "Inside Out",
-    "title": "Degeneration 2 Back",
-    "media": "Mixed Media",
-    "dimensions": 0,
-    "filename": "2013-Inside_Out-Degeneration_2_Back-Mixed_Media-Rosselle.jpg"
-  },
-  {
-    "year": 2013,
-    "show": "Inside Out",
     "title": "Degeneration Individual 1",
     "media": "Mixed Media",
     "dimensions": 0,
@@ -343,6 +462,14 @@
     "media": "Mixed Media",
     "dimensions": 0,
     "filename": "2013-Inside_Out-Degeneration_Individual_2-Mixed_Media-Rosselle.jpg"
+  },
+  {
+    "year": 2013,
+    "show": "Inside Out",
+    "title": "Degeneration 2 Back",
+    "media": "Mixed Media",
+    "dimensions": 0,
+    "filename": "2013-Inside_Out-Degeneration_2_Back-Mixed_Media-Rosselle.jpg"
   },
   {
     "year": 2013,
@@ -407,14 +534,6 @@
     "media": "Mixed Media",
     "dimensions": 0,
     "filename": "2013-Inside_Out-Scarification_Side_View-Mixed_Media-Rosselle.jpg"
-  },
-  {
-    "year": 2010,
-    "show": "Hem Me In",
-    "title": "Altered Abilities",
-    "media": "Ceramic",
-    "dimensions": 0,
-    "filename": "2010-Hem_Me_In-Altered_Abilities-Ceramic-Rosselle.jpg"
   },
   {
     "year": 2010,
