@@ -7,8 +7,10 @@
     $('main > section').hide();
     $('#slideshow').show();
     var show = ctx.params.show;
+    // Doesn't work because of async loading of data.
     // if (Art.shows.indexOf(show) > -1) {
-    //   slideshow.populateSlideShow(Art.filter(show));
+    //
+    //   slideshow.populateSlideshow(Art.filter(show));
     //   slideshowView.changeImage(100);
     //   console.log('matched');
     //   return;

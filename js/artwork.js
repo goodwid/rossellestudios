@@ -1,54 +1,55 @@
+/* globals artworkView */
+
 (function(module) {
 
   function Art (opts) {
-    var pathPrefix = 'https://s3-us-west-2.amazonaws.com/rossellestudios/';
-    // var pathPrefix = 'sized-images/';
+    const pathPrefix = 'https://s3-us-west-2.amazonaws.com/rossellestudios/';
+    // const pathPrefix = '/sized-images/';
 
     this.title = opts.title;
     this.media = opts.media;
     this.show = opts.show;
-    // this.dimensions = opts.dimensions;
     this.year = opts.year;
     this.path = pathPrefix + opts.filename;
   }
 
   Art.all = [];
 
-  Art.filter = function(show) {
-    return Art.all.filter(function(obj) {
-      return show.indexOf(obj.show) > -1;
+  Art.filter = show => {
+    return Art.all.filter(el => {
+      return show.indexOf(el.show) > -1;
     });
   };
 
-  Art.initShows = function() {
-    Art.current = 'Biomorphic Bowls and Vases';
-    var shows = Art.all.map(function (obj) {
-      return obj.show;
+  Art.initShows = () => {
+    Art.current = 'Biomorphics';
+    var shows = Art.all.map(el => {
+      return el.show;
     })
       .sort().reduce(function(prev,curr) {
         if (curr != prev[0]) prev.unshift(curr);
         return prev;
       }, []);
-    Art.past = shows.filter(function(a) {
-      return a !== Art.current;
+    Art.past = shows.filter(function(el) {
+      return el !== Art.current;
     });
     return shows;
   };
 
-  Art.loadAll = function(rawData) {
-    Art.all = rawData.map(function (ele) {
-      return new Art(ele);
+  Art.loadAll = data => {
+    Art.all = data.map(el => {
+      return new Art(el);
     });
   };
 
-  Art.fetchAll = function () {
+  Art.fetchAll = () => {
     var url = '/data/artwork.json';
 
     var jqXHR = $.ajax({
       url: url,
       type: 'HEAD',
       dataType: 'json',
-      success: function () {
+      success () {
         var eTag = jqXHR.getResponseHeader('ETag');
         if ((localStorage.eTag === eTag) && (localStorage.rawData)) {
           Art.loadAll(JSON.parse(localStorage.rawData));
@@ -56,11 +57,11 @@
           artworkView.initIndexPage();
         } else {
           $.getJSON(url)
-          .done(function(rawData) {
-            localStorage.rawData = JSON.stringify(rawData);
+          .done(function(data) {
+            localStorage.rawData = JSON.stringify(data);
             localStorage.eTag = eTag;
 
-            Art.loadAll(rawData);
+            Art.loadAll(data);
             Art.shows = Art.initShows();
             artworkView.initIndexPage();
           })
