@@ -1,14 +1,14 @@
+/* globals Art, slideshow, slideshowView*/
+
 (function(module) {
-  var artworkView = {};
+  const artworkView = {};
 
   artworkView.populateFilter = function() {
-    var val = {
-      data: ''
-    };
-    var optionTag = '';
-    var appTemplate = $('#selector-template').html();
-    var compileTemplate = Handlebars.compile(appTemplate);
-    var $sf = $('#show-filter');
+    const val = {data: ''};
+    let optionTag = '';
+    const appTemplate = $('#selector-template').html();
+    const compileTemplate = Handlebars.compile(appTemplate);
+    const $sf = $('#show-filter');
 
     Art.shows.sort().forEach(function(a) {
       val.data = a;

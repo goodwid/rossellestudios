@@ -11,7 +11,7 @@
     "es6": true,
     "node": true,
     "browser": true,
-    "jquery": true,
+    "jquery": true
   },
   "globals": {
     "describe": false,
@@ -22,12 +22,12 @@
     "after": false,
     "$": false,
     "superagent": false,
-    "Handlebars": false,
+    "Handlebars": false
   },
   "ecmaFeatures": {
     "modules": true,
     "experimentalObjectRestSpread": true,
-    "impliedStrict": true,
+    "impliedStrict": true
   },
   "extends": "eslint:recommended"
 }

@@ -3,7 +3,6 @@
   var slideshow = {};
   var slideshowView = {};
 
-
   slideshow.current = 0;
   slideshow.images = [];
   slideshow.$image = $('#slideshow-image');
@@ -28,17 +27,29 @@
     slideshow.$data.text(data);
     slideshow.$image.hide();
     slideshow.$image.css('background-image', 'url(' + slideshow.images[slideshow.current].path + ')');
-    // $('#testing-nexx').attr('src',slideshow.images[slideshow.current].path);
     slideshow.$image.show();
   };
 
   slideshowView.handleButtons = function() {
-
     $('#left-side, #button-left').on('click', function() {
       slideshowView.changeImage(-1);
     });
     $('#right-side, #button-right').on('click', function() {
       slideshowView.changeImage(1);
+    });
+    $(document).keydown(function(e) {
+      // e.preventDefault();
+      switch(e.which) {
+      case 37: {
+        slideshowView.changeImage(-1);
+        break;
+      }
+      case 39:{
+        slideshowView.changeImage(1);
+        break;
+      }
+      default: return;
+      }
     });
   };
 

@@ -1,5 +1,5 @@
 (function(module) {
-  var aboutController = {};
+  const aboutController = {};
   aboutController.index = function() {
     $('main > section').hide();
     $('#about').show();

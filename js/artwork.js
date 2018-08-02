@@ -42,35 +42,12 @@
     });
   };
 
-  Art.fetchAll = () => {
+  Art.fetchAll = (callback) => {
     var url = '/data/artwork.json';
 
-    var jqXHR = $.ajax({
-      url: url,
-      type: 'HEAD',
-      dataType: 'json',
-      success () {
-        var eTag = jqXHR.getResponseHeader('ETag');
-        if ((localStorage.eTag === eTag) && (localStorage.rawData)) {
-          Art.loadAll(JSON.parse(localStorage.rawData));
-          Art.shows = Art.initShows();
-          artworkView.initIndexPage();
-        } else {
-          $.getJSON(url)
-          .done(function(data) {
-            localStorage.rawData = JSON.stringify(data);
-            localStorage.eTag = eTag;
-
-            Art.loadAll(data);
-            Art.shows = Art.initShows();
-            artworkView.initIndexPage();
-          })
-          .fail(function() {
-            console.log('getJSON failed, check JSON format or file presence.');
-          });
-        }
-      }
-    });
+    fetch(url)
+      .then(results => results.json())
+      .then(data => callback(data));
   };
 
   module.Art = Art;

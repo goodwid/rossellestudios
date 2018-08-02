@@ -1,3 +1,5 @@
+/* globals page, slideshowController, aboutController, contactController */
+
 (function(module) {
   var routes = {};
 
